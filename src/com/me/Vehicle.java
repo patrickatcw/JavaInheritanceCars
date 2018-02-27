@@ -9,8 +9,6 @@ public class Vehicle {
     private int currentDirection;   //direction of vehicle
 
     //create a constructor
-
-
     public Vehicle(String name, String size /*int currentVelocity, int currentDirection*/) {
         this.name = name;
         this.size = size;
@@ -20,5 +18,22 @@ public class Vehicle {
 
         this.currentVelocity = 0;   //removed from parameters and added values of 0
         this.currentDirection = 0;
+    }
+
+    //create getters
+    public String getName() {
+        return name;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public int getCurrentVelocity() {
+        return currentVelocity;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
     }
 }
