@@ -20,6 +20,9 @@ public class Ford extends Car {
         super(name, size, wheels, doors, gears, isManual, currentGear);
         */
 
+     //need method for accelerating changes and gear changes
+
+
     }
 
 }
