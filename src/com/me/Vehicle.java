@@ -27,6 +27,16 @@ public class Vehicle {
                             currentDirection + " degrees.");
     }
 
+    public void move(int velocity, int direction){      //move method per requirements in directions
+        currentVelocity = velocity;
+        currentDirection = direction;
+        System.out.println("Vehicle.move(): Moving at " +
+                    currentVelocity + " in direction " + currentDirection);
+
+    }
+
+    //**note: a changing gear method would be in class where required
+
     //create getters
     public String getName() {
         return name;
