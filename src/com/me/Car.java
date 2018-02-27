@@ -10,6 +10,12 @@ public class Car {
 
     private int currentGear;
 
-
-
+    //added constructor
+    public Car(int wheels, int doors, int gears, boolean isManual, int currentGear) {
+        this.wheels = wheels;
+        this.doors = doors;
+        this.gears = gears;
+        this.isManual = isManual;
+        this.currentGear = currentGear;
+    }
 }
