@@ -53,4 +53,10 @@ public class Vehicle {
     public int getCurrentDirection() {
         return currentDirection;
     }
+
+    //had to create this method for stopping
+    public void stop(){         //method for stopping
+        this.currentVelocity = 0;
+    }
+
 }

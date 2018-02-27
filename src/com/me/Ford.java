@@ -20,8 +20,27 @@ public class Ford extends Car {
         super(name, size, wheels, doors, gears, isManual, currentGear);
         */
 
-     //need method for accelerating changes and gear changes
-
+    }
+     //method for accelerating changes and gear changes
+        public void accelerate(int rate){           //method that is unique for this class
+            //changeGear is a method defined in car class
+            int newVelocity = getCurrentVelocity() + rate; //rate can be + or -
+            if(newVelocity == 0){
+                stop();  //if new velocity is = to 0, then calling stop method from vehicle class
+                changeGear(1); //if car stopped going to change gear to 1
+            } else if (newVelocity > 0 && newVelocity <= 10){
+                changeGear(1);
+            } else if (newVelocity > 10 && newVelocity <= 20){
+                changeGear(2);
+            } else if (newVelocity > 20 && newVelocity <= 30){
+                changeGear(3);
+            } else {
+                changeGear(4);
+            }
+            //*note, 2 if statements in method, and this one only has an if
+            if(newVelocity >0 ){
+                changeVelocity(newVelocity, getCurrentDirection());
+            }
 
     }
 
