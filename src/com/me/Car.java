@@ -11,13 +11,14 @@ public class Car extends Vehicle{
     private int currentGear;
 
     //added constructor
-    public Car(String name, String size, int wheels, int doors, int gears, boolean isManual, int currentGear) {
+    public Car(String name, String size, int wheels, int doors, int gears, boolean isManual /*int currentGear*/) {
         super(name, size);      //needed to add b/c of super and extends purposes
         this.wheels = wheels;
         this.doors = doors;
         this.gears = gears;
         this.isManual = isManual;
-        this.currentGear = currentGear;
+        //this.currentGear = currentGear;
+        this.currentGear = 1; //and removed int currentGear in parameters
     }
 
     //create a method for changeGear
