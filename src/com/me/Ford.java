@@ -1,8 +1,8 @@
 package com.me;
 
-public class Ford extends Vehicle{
+public class Ford extends Car {
 
-    public Ford(String name, String size) {
-        super(name, size);
+    public Ford(String name, String size, int wheels, int doors, int gears, boolean isManual, int currentGear) {
+        super(name, size, wheels, doors, gears, isManual, currentGear);
     }
 }
