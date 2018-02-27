@@ -20,6 +20,13 @@ public class Vehicle {
         this.currentDirection = 0;
     }
 
+    //add methods
+    public void steer(int direction){           //steering method per requirements in directions
+        this.currentDirection += direction;
+        System.out.println("Vehicle.steer(): Steering at " +
+                            currentDirection + " degrees.");
+    }
+
     //create getters
     public String getName() {
         return name;
