@@ -14,8 +14,25 @@ public class Main {
 
         Ford ford = new Ford(60);  //creating an instance
 
-        ford.steer(30);             //print result;     Vehicle.steer(): Steering at 30 degrees.
+        //steer method is coming from vehicle class
+        ford.steer(30);       //print result;     Vehicle.steer(): Steering at 30 degrees.
+        ford.accelerate(30);          //accelerating 30
+        ford.accelerate(20);          //adds 20 to the previous 30
+        ford.accelerate(-42);         //slowing down takes us to 1st gear
 
     }
 
 }
+//print results;
+/*
+Vehicle.steer(): Steering at 30 degrees.
+Car.setCurrentGear(): Changed to 3 gear.
+Car.changeVelocity(): Velocity 30 direction 30
+Vehicle.move(): Moving at 30 in direction 30
+Car.setCurrentGear(): Changed to 4 gear.
+Car.changeVelocity(): Velocity 50 direction 30
+Vehicle.move(): Moving at 50 in direction 30
+Car.setCurrentGear(): Changed to 1 gear.
+Car.changeVelocity(): Velocity 8 direction 30
+Vehicle.move(): Moving at 8 in direction 30
+*/
