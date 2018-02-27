@@ -12,6 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Ford ford = new Ford(60);  //creating an instance
+
+        ford.steer(30);             //print result;     Vehicle.steer(): Steering at 30 degrees.
 
     }
 
